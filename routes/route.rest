@@ -1,0 +1,25 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/60737037e353701e0226c065
+
+###
+POST http://localhost:3000/subscribers
+content-type: application/json
+
+{
+    "name": "Almaz The person",
+    "subscribedToChannel": "Abol"
+
+}
+
+###
+DELETE http://localhost:3000/subscribers/60737037e353701e0226c065
+
+###
+PATCH  http://localhost:3000/subscribers/607373078d4c452106551ebe
+Content-Type: application/json
+
+{
+    "name": "Adis Name"
+}
